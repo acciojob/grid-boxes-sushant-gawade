@@ -1,1 +1,50 @@
 /*  your css code here. If applicable */
+body {
+  margin: 0;
+  background-color: #2e7d32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#grid {
+  display: grid;
+  grid-template-rows: 124px 124px 124px 124px 124px;
+  grid-template-columns: 242.5px 242.5px 242.5px 242.5px;
+  grid-gap: 10px 10px;
+  background-color: #2e7d32;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  width: auto;
+}
+
+#grid > div {
+  background-color: #2e7d32;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Match expected grid spans */
+#grid > div:nth-child(1) {
+  grid-column: span 4;
+}
+
+#grid > div:nth-child(2) {
+  grid-row: span 4;
+}
+
+#grid > div:nth-child(4) {
+  grid-column: span 2;
+}
+
+#grid > div:nth-child(5) {
+  grid-column: span 2;
+}
+
+#grid > div:nth-child(10) {
+  grid-column: span 3;
+}
